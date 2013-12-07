@@ -1,0 +1,53 @@
+<!--
+ ! Excerpted from "Code in the Cloud",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/mcappe for more book information.
+-->
+<html>
+ <head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" media="screen" 
+        type="text/css" 
+ 		href="chat-style-layout.css"/>
+ </head>
+
+ <body> 
+
+<div id="header-block">
+    <h1>Welcome to {{ title }} </h1>
+    <p> Current time is {% now "F j Y H:i" %}</p>
+</div>
+
+<div id="navbar-block">
+  {% block navbar %}
+    <div id="navbar">
+      <ul>
+	{% for c in chats %}
+	<li><a href="{{ c.url }}">c.name</a></li>	{% end for %}
+      </ul>
+    </div>
+    {% endblock %}
+</div>
+
+<div id="content">
+  {% block pagecontent %}
+
+    <p> This is template text. If you're seeing this in a page rendered
+      by chat, something is wrong.</p>
+      
+
+    {% endblock %}
+  </body>
+</div>
+
+<div id="entry-form">
+  {% block entry %}
+  {% endblock %}
+</div>
+
+</html>
+
+

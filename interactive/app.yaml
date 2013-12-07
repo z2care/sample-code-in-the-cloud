@@ -1,0 +1,17 @@
+application: gae-simple-chat-servant
+version: interactive
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /(.*\.css)
+  static_files: static/\1
+  upload: static/(.*\.css)
+
+- url: /(.*\.js) 
+  static_files: js/\1
+  upload: js/(.*\.js)
+    
+- url: /.*
+  script: chat.chatapp

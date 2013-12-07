@@ -1,0 +1,28 @@
+<!--
+ ! Excerpted from "Code in the Cloud",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/mcappe for more book information.
+-->
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>Welcome to {{ title }} </h1> <!-- (1) -->
+    <p> Current time is {% now "F j Y H:i" %}</p> <!-- (2) -->
+
+    {% for m in msg_list %} <!-- (3) -->
+    <p> {{ m.user }} ( {{ m.timestamp }} ): {{ m.message|escape }} </p> <!-- (4) -->
+    {% endfor %}
+    <form action="/talk" method="post"> 
+      <p><b>Message</b></p>
+      <div><textarea name="message" rows="5" cols="60"></textarea></div>
+      <div><input type="submit" value="Send ChatMessage"/></div>
+    </form>
+  </body>
+</html>
+
+

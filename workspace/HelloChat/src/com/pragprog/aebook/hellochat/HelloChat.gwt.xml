@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ! Excerpted from "Code in the Cloud",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/mcappe for more book information.
+-->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 1.7.1//EN" 
+    "http://google-web-toolkit.googlecode.com/.../gwt-module.dtd">
+<module rename-to='hellochat'> <!-- (1) -->
+  
+  <inherits 
+  	name='com.google.gwt.user.User'/> <!-- (2) -->
+
+  <inherits 
+  	name='com.google.gwt.user.theme.standard.Standard'/><!-- (3) -->
+
+  <entry-point
+    class='com.pragprog.aebook.hellochat.client.HelloChat'/><!-- (4) --> 
+</module>

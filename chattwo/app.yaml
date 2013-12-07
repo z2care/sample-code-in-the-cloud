@@ -1,0 +1,9 @@
+application: gae-simple-chat-servant
+version: chattwo
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: chattwo.chatapp

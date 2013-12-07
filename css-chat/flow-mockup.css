@@ -1,0 +1,6 @@
+#sidebar {
+	float: left; /*<callout id="co.first-float"/>*/
+	border: 2px solid #0000FF; /*<callout id="co.first-border"/>*/
+	padding: 5px;/*<callout id="co.first-padding"/>*/
+	margin-right: 5px;
+}

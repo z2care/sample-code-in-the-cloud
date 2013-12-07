@@ -1,0 +1,9 @@
+application: gae-simple-chat-servant
+version: secure-chat
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: tchat.chatapp

@@ -1,0 +1,49 @@
+body {
+  background-color: #8888FF;
+}
+
+#header-block {
+  font-family: 16px Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #0000A0;
+  border: 2px ridge #0000F0;
+}
+
+#navbar-block {
+  float: left;
+  width: 20%;
+  font-family: 8px Helvetica, sans-serif;
+  color: #000000;
+  background-color: FFFFFF;
+  border: 2px ridge #0000F0;
+  padding: 4px;
+  margin-right: 4px;  
+}
+
+#transcript-block {
+  padding: 4px;
+  float: right;
+  width: 75%;
+  font-family: 8px Helvetica, sans-serif;
+  background-color: 444444;
+  color: #FFFFFF;
+  border: 2px ridge #0000F0;
+}
+
+#entry-block {
+  clear: both;
+  border: 2px ridge #0000F0;
+  margin-top: 4px;
+}
+ 
+p.sentbyme {
+  color: #FFFFFF;
+  font-family: 9px Helvetica, sans-serif;
+}
+
+p.sentbyother {
+  color: #DDDDFF;
+  font-family: 10px Helvetica, sans-serif;
+  background-color: #000080;
+}
+/* END: message-style */

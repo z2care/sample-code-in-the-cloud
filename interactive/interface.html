@@ -1,0 +1,28 @@
+<!--
+ ! Excerpted from "Code in the Cloud",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/mcappe for more book information.
+-->
+
+{% extends "master.html" %}  
+
+{% block script %}
+<script src="asynch.js" language="javascript">
+</script><!-- (1) -->
+{% endblock %}
+
+{% block pagecontent %} 
+<div id="chat-transcript"> <!-- (2) -->
+</div>
+
+<form action="/talk?chat={{ chat }}" method="post"> 
+  <p><b>Message</b></p>
+  <div><textarea name="message" rows="5" cols="60"></textarea></div>
+  <div><input type="submit" value="Send ChatMessage"/></div>
+</form>
+
+{% endblock %}
+

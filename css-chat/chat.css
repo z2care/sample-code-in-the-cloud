@@ -1,0 +1,32 @@
+/* START: FancyHeaders */
+body {
+	background-color: #8888FF;
+}
+
+h1 {
+  font-family: 16px Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #0000A0;
+}
+/* END: FancyHeaders */
+
+/* START: navbar-style */
+#navbar {
+	font-family: 8px Helvetica, sans-serif;
+	color: #000000;
+	background-color: FFFFFF;
+}
+/* END: navbar-style */
+
+/* START: message-style */
+p.sentbyme {
+	color: #FFFFFF;
+	font-family: 9px Helvetica, sans-serif;
+}
+
+p.sentbyother {
+	color: #DDDDFF;
+	font-family: 10px Helvetica, sans-serif;
+	background-color: #000080;
+}
+/* END: message-style */

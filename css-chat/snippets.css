@@ -1,0 +1,17 @@
+/* START: FirstExample */
+body {
+	background-color: #8888FF;
+}
+
+h1 {
+	text-decoration: underline;
+}
+/* END: FirstExample */
+
+/* START: FancyHeaders */
+h1 {
+  font-family: 16px Helvetica, sans-serif;
+  color: #FFFFFF;
+  background-color: #0000A0;
+}
+/* END: FancyHeaders */

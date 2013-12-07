@@ -1,0 +1,48 @@
+<!--
+ ! Excerpted from "Code in the Cloud",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/mcappe for more book information.
+-->
+<html>
+  <head>
+    <title>MarkCC's AppEngine Chatroom</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="app.css"/>
+  </head>
+  
+  <body> 
+    <div id="header-block">
+      <h1>Welcome to MarkCC's AppEngine Chatroom </h1>
+      <p> Current time is March 13, 2011 8:39</p>
+    </div>
+    
+    <div id="navbar-block">
+      <p><b>CHATS</b></p>
+      <ul>
+	<li>Work</li>
+	<li>Play</li>
+	<li>Write</li>
+	<li>Misc</li>
+      </ul>
+    </div>
+    
+    <div id="transcript-block">
+      <p class="sentbyother">Hi. How's it going?</p>
+      <p class="sentbyme">Not bad. Making progress, slowly.</p>
+      <p class="sentbyother">That's good. What about work?</p>
+      <p class="sentbyme">Work is cool, going really well.</p>
+    </div>
+    
+    <div id="entry-block">
+      <form action="/talk&chat=thischat" method="post"> 
+	<p><b>Message</b></p>
+	<div><textarea name="message" rows="5" cols="60"></textarea></div>
+	<div><input type="submit" value="Send ChatMessage"/></div>
+      </form>
+    </div>	
+  </body>
+</html>
+
+

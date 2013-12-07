@@ -1,0 +1,18 @@
+<!--
+ ! Excerpted from "Code in the Cloud",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/mcappe for more book information.
+-->
+<queue-entries>
+  <queue>
+    <name>default</name>
+    <rate>5/s</rate>
+  </queue>
+  <queue>
+    <name>priority-queue</name>
+    <rate>10/s</rate>
+  </queue>
+</queue-entries>
